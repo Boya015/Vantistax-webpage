@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Therapy Website - Services</title>
+    <link rel="stylesheet" href="../assets/css/services.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/navbar.css" />
+    <!-- Footer styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Import social icons -->
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="../assets/img/vantistax.svg"
+            alt="vantistax Logo"
+            class="logo-image"
+          />
+        </div>
+        <!-- Desktop Menu -->
+        <nav class="nav-menu-desktop">
+          <a href="../index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./services.html">Services</a>
+          <a href="./resources.html">Resources</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger-menu" onclick="toggleMobileMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav class="nav-menu-mobile" id="navMenuMobile">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./resources.html">Resources</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero-banner">
+      <div class="banner-content">
+        <div class="Service-heading">
+          <h2>Services</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section">
+      <div class="service-grid">
+        <div class="service-item">Emotional Regulation</div>
+        <div class="service-item">Behavioral Therapy</div>
+        <div class="service-item">Grief</div>
+        <div class="service-item">Depression</div>
+        <div class="service-item">Anxiety</div>
+        <div class="service-item">Stress</div>
+        <div class="service-item">Adjustment</div>
+        <div class="service-item">Separation Difficulties</div>
+        <div class="service-item">Social Skills</div>
+        <div class="service-item">Full Psychoeducational Assessments</div>
+        <div class="service-item">Career Counseling</div>
+        <div class="service-item">ADHD Assessment</div>
+        <div class="service-item">Concessions & School Recommendation</div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h4>About Us</h4>
+          <p>
+            We are committed to providing the best therapy services to help you
+            lead a happier, healthier life.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Therapy Website. All rights reserved.</p>
+      </div>
+    </footer>
+    
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal" id="modal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription">This is where the description of the service will go.</p>
+      </div>
+    </div>
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/modal.js" defer></script>
+  </body>
+</html>

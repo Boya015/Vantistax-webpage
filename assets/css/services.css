@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #F5F5F5;
+}
+
+.logo-image {
+    height: 100px;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero-banner {
+    background-color: #e0e0e0;
+    padding: 10rem;
+    text-align: center;
+    background-image: url("/assets/img/banner-image.webp");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+  }
+
+  .Service-heading {
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    opacity: 0.5;
+  }
+
+  .Service-heading h2 {
+    font-size: 50px;
+  }
+
+.services-section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:  100px 100px 100px 100px;
+}
+
+.services-section h2{
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.service-item {
+    background-color: #FFCCEA;
+    padding: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    color: #555;
+    font-size: 1rem;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+    /* Optional: add shadow, padding, border, or other styling */
+    overflow: hidden; /* Prevents any overflow when zooming */
+    cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none; /* Hidden by default */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: #FFCCEA;
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal h3, p {
+   color: #555;
+    font-size: 1rem;
+    font-family: "Itim", cursive;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .Service-heading h2 {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 600px){
+  .Service-heading{
+    min-width: 300px;
+  }
+}
+
+
+.service-item:hover {
+    transform: scale(1.10); /* Slight zoom-in effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .navbar a {
+        display: none;
+        padding: 10px 0;
+        font-size: 1.2rem;
+      }
+      .Service-heading h2 {
+        font-size: 30px;
+      }
+
+      .service-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+    
+      .service-item {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+      }
+
+      .logo {
+        margin: 0 auto 15px;
+        display: block;
+      }
+  }
