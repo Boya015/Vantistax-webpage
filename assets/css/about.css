@@ -65,6 +65,76 @@ nav a {
   flex-direction: column;
 }
 
+/* About Container */
+.about-container {
+  /* max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem; */
+  color: #504f4f;
+}
+
+/* About Mission Section */
+.about-mission {
+  display: flex;
+  padding: 50px;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.text-section {
+  flex: 1;
+  padding-right: 1.5rem;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Optional: removes left padding */
+  margin: 0; /* Optional: removes top/bottom margin */
+}
+
+/* Team Section */
+.about-team {
+  background: linear-gradient(45deg, #0A1F44, #102A67, #1679AB);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.team-member p {
+  font-size: 1rem;
+}
+
 .about-section h2 {
   font-size: 2rem;
   color: #333;
@@ -133,6 +203,8 @@ nav a {
   }
 
   .about-mission {
+    display: flex;
+    flex-direction: column;
     padding: 50px 50px 50px 50px;
     background-color: #F5F5F5;
     line-height: 25px;
@@ -154,10 +226,16 @@ nav a {
     text-decoration: none
   };
 
-  .therapist-image {
-    width: 300px;
-    margin-bottom: 20px;
+  .about-mission {
+    display: flex;
+    flex-direction: column;
   }
+
+  .text-section, .image-section {
+    text-align: center;
+    padding: 0;
+  }
+
   .about-team {
     padding: 50px 50px 50px 50px;
     text-align: center;
