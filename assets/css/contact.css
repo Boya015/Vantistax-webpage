@@ -42,13 +42,10 @@ nav a {
 }
 
 .contact-heading {
-  background-color: #fff;
+  color: #fff;
   padding: 0.5rem;
   width: 80%;
   max-width: 400px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  opacity: 0.5;
 }
 
 .contact-heading h2 {
@@ -120,20 +117,7 @@ nav a {
   height: 200px;
 }
 
-.office-hours {
-  background-color: #fff;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-wrap: nowrap;
-}
 
-.office-hours p{
-  text-align: center;
-  padding: 5px;
-}
-
-.office-hours h2,
 .contact-info  h2 {
   color: #333;
   margin-bottom: 1rem;
@@ -161,7 +145,8 @@ nav a {
 
 
 .submit-btn:hover {
-  background-color: #C8A7C4;
+  background:linear-gradient(45deg, #0A1F44,  #102A67, #1679AB); /* Replace with your exact colors */
+  color: #ddd;
 }
 
 @media (max-width: 1024px) {

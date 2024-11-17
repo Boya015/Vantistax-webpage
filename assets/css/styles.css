@@ -19,6 +19,11 @@ a {
   height: 170px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 nav a {
   color: #504f4f;
   font-size: medium;
